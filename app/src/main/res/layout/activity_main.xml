@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a30291.memepk.MainActivity"
+    >
+
+    <com.example.a30291.memepk.BloodProgressTextView
+        android:id="@+id/tvProgress"
+        android:layout_width="106dp"
+        android:layout_height="14dp"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="4000/10000"
+        android:textSize="9sp"
+        app:maxProgress="100"
+        app:progress="0"
+        app:radius="6dp"
+        app:borderWidth="1dp"
+        app:progressColor="@color/colorPrimary"
+        app:secondProgressColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.a30291.memepk.BloodAnimationView
+        android:id="@+id/bloodAnimationView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel"
+        android:onClick="cancel"/>
+
+</android.support.constraint.ConstraintLayout>
